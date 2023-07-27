@@ -20,11 +20,19 @@ Respond using Markdown.`;
 export const modelOptions: ModelOptions[] = [
   'gpt-3.5-turbo',
   'gpt-3.5-turbo-16k',
+  'gpt-3.5-turbo-0613',
+  'gpt-3.5-turbo-0301',
   'gpt-4',
+  'gpt-4-0613',
   'gpt-4-32k',
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
+  'sage',
+  'claude-instant',
+  'claude+',
+  'claude-instant-100k',
+  'chat-bison-001',
 ];
 
 export const defaultModel = 'gpt-3.5-turbo';
@@ -41,6 +49,7 @@ export const modelMaxToken = {
   'gpt-4-32k': 32768,
   'gpt-4-32k-0314': 32768,
   'gpt-4-32k-0613': 32768,
+  
 };
 
 export const modelCost = {
@@ -87,6 +96,28 @@ export const modelCost = {
   'gpt-4-32k-0613': {
     prompt: { price: 0.06, unit: 1000 },
     completion: { price: 0.12, unit: 1000 },
+  },
+  'sage': {
+    prompt: { price: 0.002, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+
+  'claude-instant': {
+    prompt: { price: 0.002, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+  'claude+': {
+    prompt: { price: 0.002, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+
+  'claude-instant-100k': {
+    prompt: { price: 0.002, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+  'chat-bison-001': {
+    prompt: { price: 0.002, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
   },
 };
 
